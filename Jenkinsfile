@@ -19,7 +19,7 @@ pipeline {
               success {
                 archiveArtifacts artifacts: 'java-app/target/*.jar', fingerprint: true
             }
-        }
+          }
         }
         stage('Test') {
             steps {
